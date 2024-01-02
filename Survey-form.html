@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="header-outer">
+    <div class="element"></div>
+    <div class="header-inner">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly fill out the form below,
+        we care about your experience.
+    </p>
+    </div>
+    </div>
+    <Form id="survey-form" method="get" action="">
+<fieldset class="info">
+        <label for="name" id="name-label">Name:
+            <input type="text" name="name" id="name" placeholder="John Doe" required />
+        </label>
+        <label for="email" id="email-label">Enter your email:
+            <input type="email" name="email" id="email" placeholder="john.doe@abc.com" required/>
+        </label>
+        <label for="age" id="number-label">How old are you?:
+            <input type="number" name="age" max="120" min="12" id="number" placeholder="18" />
+        </label>
+</fieldset>
+
+<fieldset>
+    <legend><label for="dropdown">Do you enjoy using the app? </label></legend>
+    <select id="dropdown">
+        <option selected>Select an option</option>
+        <option>Absolutely</option>
+        <option>Not quite</option>
+        <option>Not sure</option>
+    </select>
+</fieldset>
+
+<fieldset>
+    <legend><label for="recommend">Would you refer this app to a friend?</label></legend>
+    <label class="radio-label"for="Yes"><input type="radio" id="Yes" name="recommend" value="Yes" /> Yes</label>
+    <label class="radio-label"for="Yes"><input type="radio" id="Yes" name="recommend" value="No" /> No</label>
+    <label class="radio-label"for="Yes"><input type="radio" id="Yes" name="recommend" value="Maybe" /> Maybe</label>
+</fieldset>
+
+<fieldset>
+    <legend><label>Do you agree to the <a href="#" />terms and agreement</a></label></legend>
+    <label class="radio-label"for="agree"><input type="checkbox" id="agree" name="agree" value="agree" /> I agree</label>
+        <label class="radio-label"for="disagree"><input type="checkbox" id="disagree" name="disagree" value="disagree" /> I disagree</label>
+</fieldset>
+
+        <label class="textarea-label" for="message">What do you think should be done better?</label>
+        <textarea cols="30" row="30" placeholder="Leave us a message"></textarea>
+        <input class="submit-btn" type="submit" id="submit" value="Submit" /> 
+    </Form>
+</body>
+
+</html>
